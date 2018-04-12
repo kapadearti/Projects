@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+
+body{
+    font-family: 'Lato', sans-serif;
+    color: rgb(15, 15, 15);
+    background-color: #0b8339;
+  }
+  
+  .main-content{
+    padding-top: 60px;
+    color: #333;
+  }
+  
+  h1 h2 h3 h4 h5{
+    font-family: 'Monteserrat', sans-serif;
+    color: #333;
+  }

@@ -1,0 +1,920 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MovieDataLayer.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:MovieDataLayer.Fakes.Shimbooking">
+            <summary>Shim type of MovieDataLayer.booking</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimbooking.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimbooking.#ctor(MovieDataLayer.booking)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimbooking.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.bookPersonnameGet">
+            <summary>Sets the shim of booking.get_bookPersonname()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.bookPersonnameSetString">
+            <summary>Sets the shim of booking.set_bookPersonname(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.bookingDateGet">
+            <summary>Sets the shim of booking.get_bookingDate()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.bookingDateSetNullableOfDateTime">
+            <summary>Sets the shim of booking.set_bookingDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.bookingIDGet">
+            <summary>Sets the shim of booking.get_bookingID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.bookingIDSetInt32">
+            <summary>Sets the shim of booking.set_bookingID(Int32 value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.movieGet">
+            <summary>Sets the shim of booking.get_movie()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.movieSetmovie">
+            <summary>Sets the shim of booking.set_movie(movie value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.movieidGet">
+            <summary>Sets the shim of booking.get_movieid()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.movieidSetNullableOfInt32">
+            <summary>Sets the shim of booking.set_movieid(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.paymentStatusIDGet">
+            <summary>Sets the shim of booking.get_paymentStatusID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.paymentStatusIDSetString">
+            <summary>Sets the shim of booking.set_paymentStatusID(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.seatGet">
+            <summary>Sets the shim of booking.get_seat()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.seatSetseat">
+            <summary>Sets the shim of booking.set_seat(seat value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.seatidGet">
+            <summary>Sets the shim of booking.get_seatid()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.AllInstances.seatidSetNullableOfInt32">
+            <summary>Sets the shim of booking.set_seatid(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimbooking.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimbooking.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.Constructor">
+            <summary>Sets the shim of booking.booking()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.bookPersonnameGet">
+            <summary>Sets the shim of booking.get_bookPersonname()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.bookPersonnameSetString">
+            <summary>Sets the shim of booking.set_bookPersonname(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.bookingDateGet">
+            <summary>Sets the shim of booking.get_bookingDate()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.bookingDateSetNullableOfDateTime">
+            <summary>Sets the shim of booking.set_bookingDate(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.bookingIDGet">
+            <summary>Sets the shim of booking.get_bookingID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.bookingIDSetInt32">
+            <summary>Sets the shim of booking.set_bookingID(Int32 value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.movieGet">
+            <summary>Sets the shim of booking.get_movie()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.movieSetmovie">
+            <summary>Sets the shim of booking.set_movie(movie value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.movieidGet">
+            <summary>Sets the shim of booking.get_movieid()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.movieidSetNullableOfInt32">
+            <summary>Sets the shim of booking.set_movieid(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.paymentStatusIDGet">
+            <summary>Sets the shim of booking.get_paymentStatusID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.paymentStatusIDSetString">
+            <summary>Sets the shim of booking.set_paymentStatusID(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.seatGet">
+            <summary>Sets the shim of booking.get_seat()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.seatSetseat">
+            <summary>Sets the shim of booking.set_seat(seat value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.seatidGet">
+            <summary>Sets the shim of booking.get_seatid()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimbooking.seatidSetNullableOfInt32">
+            <summary>Sets the shim of booking.set_seatid(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimmovie">
+            <summary>Shim type of MovieDataLayer.movie</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmovie.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmovie.#ctor(MovieDataLayer.movie)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimmovie.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.bookingsGet">
+            <summary>Sets the shim of movie.get_bookings()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.bookingsSetICollectionOfbooking">
+            <summary>Sets the shim of movie.set_bookings(ICollection`1&lt;booking&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.dateGet">
+            <summary>Sets the shim of movie.get_date()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.dateSetNullableOfDateTime">
+            <summary>Sets the shim of movie.set_date(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.languageGet">
+            <summary>Sets the shim of movie.get_language()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.languageSetString">
+            <summary>Sets the shim of movie.set_language(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.movieIDGet">
+            <summary>Sets the shim of movie.get_movieID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.movieIDSetInt32">
+            <summary>Sets the shim of movie.set_movieID(Int32 value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.movieNameGet">
+            <summary>Sets the shim of movie.get_movieName()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.movieNameSetString">
+            <summary>Sets the shim of movie.set_movieName(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.screenGet">
+            <summary>Sets the shim of movie.get_screen()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.screenIDGet">
+            <summary>Sets the shim of movie.get_screenID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.screenIDSetNullableOfInt32">
+            <summary>Sets the shim of movie.set_screenID(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.screenSetscreen">
+            <summary>Sets the shim of movie.set_screen(screen value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.statusGet">
+            <summary>Sets the shim of movie.get_status()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.statusSetString">
+            <summary>Sets the shim of movie.set_status(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.timeslotGet">
+            <summary>Sets the shim of movie.get_timeslot()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.timeslotIDGet">
+            <summary>Sets the shim of movie.get_timeslotID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.timeslotIDSetNullableOfInt32">
+            <summary>Sets the shim of movie.set_timeslotID(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.AllInstances.timeslotSettimeslot">
+            <summary>Sets the shim of movie.set_timeslot(timeslot value)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmovie.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmovie.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.Constructor">
+            <summary>Sets the shim of movie.movie()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.bookingsGet">
+            <summary>Sets the shim of movie.get_bookings()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.bookingsSetICollectionOfbooking">
+            <summary>Sets the shim of movie.set_bookings(ICollection`1&lt;booking&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.dateGet">
+            <summary>Sets the shim of movie.get_date()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.dateSetNullableOfDateTime">
+            <summary>Sets the shim of movie.set_date(Nullable`1&lt;DateTime&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.languageGet">
+            <summary>Sets the shim of movie.get_language()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.languageSetString">
+            <summary>Sets the shim of movie.set_language(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.movieIDGet">
+            <summary>Sets the shim of movie.get_movieID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.movieIDSetInt32">
+            <summary>Sets the shim of movie.set_movieID(Int32 value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.movieNameGet">
+            <summary>Sets the shim of movie.get_movieName()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.movieNameSetString">
+            <summary>Sets the shim of movie.set_movieName(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.screenGet">
+            <summary>Sets the shim of movie.get_screen()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.screenIDGet">
+            <summary>Sets the shim of movie.get_screenID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.screenIDSetNullableOfInt32">
+            <summary>Sets the shim of movie.set_screenID(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.screenSetscreen">
+            <summary>Sets the shim of movie.set_screen(screen value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.statusGet">
+            <summary>Sets the shim of movie.get_status()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.statusSetString">
+            <summary>Sets the shim of movie.set_status(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.timeslotGet">
+            <summary>Sets the shim of movie.get_timeslot()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.timeslotIDGet">
+            <summary>Sets the shim of movie.get_timeslotID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.timeslotIDSetNullableOfInt32">
+            <summary>Sets the shim of movie.set_timeslotID(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmovie.timeslotSettimeslot">
+            <summary>Sets the shim of movie.set_timeslot(timeslot value)</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimmtb_dbEntities">
+            <summary>Shim type of MovieDataLayer.mtb_dbEntities</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmtb_dbEntities.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmtb_dbEntities.#ctor(MovieDataLayer.mtb_dbEntities)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of mtb_dbEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.bookingsGet">
+            <summary>Sets the shim of mtb_dbEntities.get_bookings()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.bookingsSetDbSetOfbooking">
+            <summary>Sets the shim of mtb_dbEntities.set_bookings(DbSet`1&lt;booking&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.moviesGet">
+            <summary>Sets the shim of mtb_dbEntities.get_movies()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.moviesSetDbSetOfmovie">
+            <summary>Sets the shim of mtb_dbEntities.set_movies(DbSet`1&lt;movie&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.screensGet">
+            <summary>Sets the shim of mtb_dbEntities.get_screens()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.screensSetDbSetOfscreen">
+            <summary>Sets the shim of mtb_dbEntities.set_screens(DbSet`1&lt;screen&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.seatsGet">
+            <summary>Sets the shim of mtb_dbEntities.get_seats()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.seatsSetDbSetOfseat">
+            <summary>Sets the shim of mtb_dbEntities.set_seats(DbSet`1&lt;seat&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.timeslotsGet">
+            <summary>Sets the shim of mtb_dbEntities.get_timeslots()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.AllInstances.timeslotsSetDbSetOftimeslot">
+            <summary>Sets the shim of mtb_dbEntities.set_timeslots(DbSet`1&lt;timeslot&gt; value)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmtb_dbEntities.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmtb_dbEntities.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmtb_dbEntities.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimmtb_dbEntities.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.Constructor">
+            <summary>Sets the shim of mtb_dbEntities.mtb_dbEntities()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of mtb_dbEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.bookingsGet">
+            <summary>Sets the shim of mtb_dbEntities.get_bookings()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.bookingsSetDbSetOfbooking">
+            <summary>Sets the shim of mtb_dbEntities.set_bookings(DbSet`1&lt;booking&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.moviesGet">
+            <summary>Sets the shim of mtb_dbEntities.get_movies()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.moviesSetDbSetOfmovie">
+            <summary>Sets the shim of mtb_dbEntities.set_movies(DbSet`1&lt;movie&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.screensGet">
+            <summary>Sets the shim of mtb_dbEntities.get_screens()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.screensSetDbSetOfscreen">
+            <summary>Sets the shim of mtb_dbEntities.set_screens(DbSet`1&lt;screen&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.seatsGet">
+            <summary>Sets the shim of mtb_dbEntities.get_seats()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.seatsSetDbSetOfseat">
+            <summary>Sets the shim of mtb_dbEntities.set_seats(DbSet`1&lt;seat&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.timeslotsGet">
+            <summary>Sets the shim of mtb_dbEntities.get_timeslots()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimmtb_dbEntities.timeslotsSetDbSetOftimeslot">
+            <summary>Sets the shim of mtb_dbEntities.set_timeslots(DbSet`1&lt;timeslot&gt; value)</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimscreen">
+            <summary>Shim type of MovieDataLayer.screen</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimscreen.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimscreen.#ctor(MovieDataLayer.screen)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimscreen.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.AllInstances.moviesGet">
+            <summary>Sets the shim of screen.get_movies()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.AllInstances.moviesSetICollectionOfmovie">
+            <summary>Sets the shim of screen.set_movies(ICollection`1&lt;movie&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.AllInstances.screenIDGet">
+            <summary>Sets the shim of screen.get_screenID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.AllInstances.screenIDSetInt32">
+            <summary>Sets the shim of screen.set_screenID(Int32 value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.AllInstances.screenNameGet">
+            <summary>Sets the shim of screen.get_screenName()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.AllInstances.screenNameSetString">
+            <summary>Sets the shim of screen.set_screenName(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.AllInstances.seatsGet">
+            <summary>Sets the shim of screen.get_seats()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.AllInstances.seatsSetICollectionOfseat">
+            <summary>Sets the shim of screen.set_seats(ICollection`1&lt;seat&gt; value)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimscreen.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimscreen.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.Constructor">
+            <summary>Sets the shim of screen.screen()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.moviesGet">
+            <summary>Sets the shim of screen.get_movies()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.moviesSetICollectionOfmovie">
+            <summary>Sets the shim of screen.set_movies(ICollection`1&lt;movie&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.screenIDGet">
+            <summary>Sets the shim of screen.get_screenID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.screenIDSetInt32">
+            <summary>Sets the shim of screen.set_screenID(Int32 value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.screenNameGet">
+            <summary>Sets the shim of screen.get_screenName()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.screenNameSetString">
+            <summary>Sets the shim of screen.set_screenName(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.seatsGet">
+            <summary>Sets the shim of screen.get_seats()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimscreen.seatsSetICollectionOfseat">
+            <summary>Sets the shim of screen.set_seats(ICollection`1&lt;seat&gt; value)</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimseat">
+            <summary>Shim type of MovieDataLayer.seat</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimseat.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimseat.#ctor(MovieDataLayer.seat)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimseat.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.RowGet">
+            <summary>Sets the shim of seat.get_Row()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.RowSetString">
+            <summary>Sets the shim of seat.set_Row(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.bookingsGet">
+            <summary>Sets the shim of seat.get_bookings()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.bookingsSetICollectionOfbooking">
+            <summary>Sets the shim of seat.set_bookings(ICollection`1&lt;booking&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.priceGet">
+            <summary>Sets the shim of seat.get_price()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.priceSetNullableOfInt32">
+            <summary>Sets the shim of seat.set_price(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.screenGet">
+            <summary>Sets the shim of seat.get_screen()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.screenIDGet">
+            <summary>Sets the shim of seat.get_screenID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.screenIDSetNullableOfInt32">
+            <summary>Sets the shim of seat.set_screenID(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.screenSetscreen">
+            <summary>Sets the shim of seat.set_screen(screen value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.seatIDGet">
+            <summary>Sets the shim of seat.get_seatID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.seatIDSetInt32">
+            <summary>Sets the shim of seat.set_seatID(Int32 value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.seatNumberGet">
+            <summary>Sets the shim of seat.get_seatNumber()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.seatNumberSetNullableOfInt32">
+            <summary>Sets the shim of seat.set_seatNumber(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.statusGet">
+            <summary>Sets the shim of seat.get_status()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.AllInstances.statusSetString">
+            <summary>Sets the shim of seat.set_status(String value)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimseat.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimseat.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.Constructor">
+            <summary>Sets the shim of seat.seat()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.RowGet">
+            <summary>Sets the shim of seat.get_Row()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.RowSetString">
+            <summary>Sets the shim of seat.set_Row(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.bookingsGet">
+            <summary>Sets the shim of seat.get_bookings()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.bookingsSetICollectionOfbooking">
+            <summary>Sets the shim of seat.set_bookings(ICollection`1&lt;booking&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.priceGet">
+            <summary>Sets the shim of seat.get_price()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.priceSetNullableOfInt32">
+            <summary>Sets the shim of seat.set_price(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.screenGet">
+            <summary>Sets the shim of seat.get_screen()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.screenIDGet">
+            <summary>Sets the shim of seat.get_screenID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.screenIDSetNullableOfInt32">
+            <summary>Sets the shim of seat.set_screenID(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.screenSetscreen">
+            <summary>Sets the shim of seat.set_screen(screen value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.seatIDGet">
+            <summary>Sets the shim of seat.get_seatID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.seatIDSetInt32">
+            <summary>Sets the shim of seat.set_seatID(Int32 value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.seatNumberGet">
+            <summary>Sets the shim of seat.get_seatNumber()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.seatNumberSetNullableOfInt32">
+            <summary>Sets the shim of seat.set_seatNumber(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.statusGet">
+            <summary>Sets the shim of seat.get_status()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimseat.statusSetString">
+            <summary>Sets the shim of seat.set_status(String value)</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimtimeslot">
+            <summary>Shim type of MovieDataLayer.timeslot</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimtimeslot.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimtimeslot.#ctor(MovieDataLayer.timeslot)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Shimtimeslot.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.AllInstances.moviesGet">
+            <summary>Sets the shim of timeslot.get_movies()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.AllInstances.moviesSetICollectionOfmovie">
+            <summary>Sets the shim of timeslot.set_movies(ICollection`1&lt;movie&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.AllInstances.timeslotDiscGet">
+            <summary>Sets the shim of timeslot.get_timeslotDisc()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.AllInstances.timeslotDiscSetString">
+            <summary>Sets the shim of timeslot.set_timeslotDisc(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.AllInstances.timeslotIDGet">
+            <summary>Sets the shim of timeslot.get_timeslotID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.AllInstances.timeslotIDSetInt32">
+            <summary>Sets the shim of timeslot.set_timeslotID(Int32 value)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimtimeslot.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Shimtimeslot.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.Constructor">
+            <summary>Sets the shim of timeslot.timeslot()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.moviesGet">
+            <summary>Sets the shim of timeslot.get_movies()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.moviesSetICollectionOfmovie">
+            <summary>Sets the shim of timeslot.set_movies(ICollection`1&lt;movie&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.timeslotDiscGet">
+            <summary>Sets the shim of timeslot.get_timeslotDisc()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.timeslotDiscSetString">
+            <summary>Sets the shim of timeslot.set_timeslotDisc(String value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.timeslotIDGet">
+            <summary>Sets the shim of timeslot.get_timeslotID()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Shimtimeslot.timeslotIDSetInt32">
+            <summary>Sets the shim of timeslot.set_timeslotID(Int32 value)</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Stubbooking">
+            <summary>Stub type of MovieDataLayer.booking</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubbooking.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubbooking.AttachBackingFieldTomovie">
+            <summary>Attaches delegates to emulate Stubbooking.movie as a property with a backing field.</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubbooking.AttachBackingFieldToseat">
+            <summary>Attaches delegates to emulate Stubbooking.seat as a property with a backing field.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubbooking.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubbooking.InitializeStub">
+            <summary>Initializes a new instance of type Stubbooking</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubbooking.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubbooking.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubbooking.MovieGet">
+            <summary>Sets the stub of booking.get_movie()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubbooking.MovieSetmovie">
+            <summary>Sets the stub of booking.set_movie(movie value)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubbooking.SeatGet">
+            <summary>Sets the stub of booking.get_seat()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubbooking.SeatSetseat">
+            <summary>Sets the stub of booking.set_seat(seat value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubbooking.movie">
+            <summary>Sets the stub of booking.get_movie()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubbooking.seat">
+            <summary>Sets the stub of booking.get_seat()</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Stubmovie">
+            <summary>Stub type of MovieDataLayer.movie</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmovie.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmovie.AttachBackingFieldTobookings">
+            <summary>Attaches delegates to emulate Stubmovie.bookings as a property with a backing field.</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmovie.AttachBackingFieldToscreen">
+            <summary>Attaches delegates to emulate Stubmovie.screen as a property with a backing field.</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmovie.AttachBackingFieldTotimeslot">
+            <summary>Attaches delegates to emulate Stubmovie.timeslot as a property with a backing field.</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmovie.BookingsGet">
+            <summary>Sets the stub of movie.get_bookings()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmovie.BookingsSetICollectionOfbooking">
+            <summary>Sets the stub of movie.set_bookings(ICollection`1&lt;booking&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmovie.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmovie.InitializeStub">
+            <summary>Initializes a new instance of type Stubmovie</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmovie.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmovie.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmovie.ScreenGet">
+            <summary>Sets the stub of movie.get_screen()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmovie.ScreenSetscreen">
+            <summary>Sets the stub of movie.set_screen(screen value)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmovie.TimeslotGet">
+            <summary>Sets the stub of movie.get_timeslot()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmovie.TimeslotSettimeslot">
+            <summary>Sets the stub of movie.set_timeslot(timeslot value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmovie.bookings">
+            <summary>Sets the stub of movie.get_bookings()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmovie.screen">
+            <summary>Sets the stub of movie.get_screen()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmovie.timeslot">
+            <summary>Sets the stub of movie.get_timeslot()</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Stubmtb_dbEntities">
+            <summary>Stub type of MovieDataLayer.mtb_dbEntities</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmtb_dbEntities.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.InitializeStub">
+            <summary>Initializes a new instance of type Stubmtb_dbEntities</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmtb_dbEntities.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubmtb_dbEntities.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of mtb_dbEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of mtb_dbEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.SaveChangesAsync">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.SaveChangesAsync01">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.SaveChangesAsyncCancellationToken">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.Set(System.Type)">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.Set``1">
+            <summary>Sets the stub of DbContext.Set()</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>Sets stubs of Set()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.SetType">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubmtb_dbEntities.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubmtb_dbEntities.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Stubscreen">
+            <summary>Stub type of MovieDataLayer.screen</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubscreen.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubscreen.AttachBackingFieldTomovies">
+            <summary>Attaches delegates to emulate Stubscreen.movies as a property with a backing field.</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubscreen.AttachBackingFieldToseats">
+            <summary>Attaches delegates to emulate Stubscreen.seats as a property with a backing field.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubscreen.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubscreen.InitializeStub">
+            <summary>Initializes a new instance of type Stubscreen</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubscreen.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubscreen.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubscreen.MoviesGet">
+            <summary>Sets the stub of screen.get_movies()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubscreen.MoviesSetICollectionOfmovie">
+            <summary>Sets the stub of screen.set_movies(ICollection`1&lt;movie&gt; value)</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubscreen.SeatsGet">
+            <summary>Sets the stub of screen.get_seats()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubscreen.SeatsSetICollectionOfseat">
+            <summary>Sets the stub of screen.set_seats(ICollection`1&lt;seat&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubscreen.movies">
+            <summary>Sets the stub of screen.get_movies()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubscreen.seats">
+            <summary>Sets the stub of screen.get_seats()</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Stubseat">
+            <summary>Stub type of MovieDataLayer.seat</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubseat.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubseat.AttachBackingFieldTobookings">
+            <summary>Attaches delegates to emulate Stubseat.bookings as a property with a backing field.</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubseat.AttachBackingFieldToscreen">
+            <summary>Attaches delegates to emulate Stubseat.screen as a property with a backing field.</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubseat.BookingsGet">
+            <summary>Sets the stub of seat.get_bookings()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubseat.BookingsSetICollectionOfbooking">
+            <summary>Sets the stub of seat.set_bookings(ICollection`1&lt;booking&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubseat.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubseat.InitializeStub">
+            <summary>Initializes a new instance of type Stubseat</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubseat.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubseat.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubseat.ScreenGet">
+            <summary>Sets the stub of seat.get_screen()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubseat.ScreenSetscreen">
+            <summary>Sets the stub of seat.set_screen(screen value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubseat.bookings">
+            <summary>Sets the stub of seat.get_bookings()</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubseat.screen">
+            <summary>Sets the stub of seat.get_screen()</summary>
+        </member>
+        <member name="T:MovieDataLayer.Fakes.Stubtimeslot">
+            <summary>Stub type of MovieDataLayer.timeslot</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubtimeslot.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubtimeslot.AttachBackingFieldTomovies">
+            <summary>Attaches delegates to emulate Stubtimeslot.movies as a property with a backing field.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubtimeslot.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:MovieDataLayer.Fakes.Stubtimeslot.InitializeStub">
+            <summary>Initializes a new instance of type Stubtimeslot</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubtimeslot.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubtimeslot.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubtimeslot.MoviesGet">
+            <summary>Sets the stub of timeslot.get_movies()</summary>
+        </member>
+        <member name="F:MovieDataLayer.Fakes.Stubtimeslot.MoviesSetICollectionOfmovie">
+            <summary>Sets the stub of timeslot.set_movies(ICollection`1&lt;movie&gt; value)</summary>
+        </member>
+        <member name="P:MovieDataLayer.Fakes.Stubtimeslot.movies">
+            <summary>Sets the stub of timeslot.get_movies()</summary>
+        </member>
+    </members>
+</doc>

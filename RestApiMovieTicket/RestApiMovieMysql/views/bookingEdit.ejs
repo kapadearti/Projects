@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=title%></title>
+        <script type="text/javascript" src="/../js/jquery-1.10.2.min.js"></script>
+        <link rel="stylesheet" href="/../css/style.css">
+    </head>
+<body>
+    <div class="page-data">
+        <% var bookingID = data[0].bookingID; 
+        var bookpersonname = data[0].bookpersonname;
+        var bookingDate = data[0].bookingDate;
+        var seatid = data[0].seatid;
+        var movieName = data[0].movieName;
+        var seatNumber = data[0].seatNumber; 
+     %>
+        <form method="post" action="/" id="the-form">
+                      
+            <table cellpadding="11">
+            <tr>
+                <td class="label">bookingID</td><td>: <input type="text" name="bookingID"  value="<%=bookingID %>"/></td>
+             </tr>
+            <tr>
+                <td class="label">bookpersonname</td><td>: <input type="text"  name="bookpersonname"  value="<%=bookpersonname %>"/></td>
+             </tr>
+              <tr>
+                <td class="label">bookingDate</td><td>: <input type="text"  name="bookingDate"  value="<%=bookingDate %>"/></td>
+             </tr>
+             <tr>
+                <td class="label">seatid</td><td>: <input type="text"  name="seatid"  value="<%=seatid %>"/></td>
+             </tr>
+             <tr>
+                <td class="label">movieName</td><td>: <input type="text"  name="movieName"  value="<%=movieName %>"/></td>
+             </tr>
+             <tr>
+                <td class="label">seatNumber</td><td>: <input type="text" name="seatNumber"  value="<%=seatNumber %>"/></td>
+             </tr>
+             <tr>
+                <td class="label"></td>
+                <td>
+                    &nbsp; <input type="button" value="Save" onClick="saveUser()">
+                </td>
+             </tr>
+            </table>
+        </form>
+    </div>
+    <div class="page-data">
+         <ul class="err-area"></ul>
+    </div>
+ <script>
+    
+        function saveUser(){
+            
+
+        alert($("#the-form").serialize());
+     
+           $.ajax({
+            
+            url:"/booking/<%=data[0].bookingID%>",
+            type:"put",
+            data: $("#the-form").serialize(),//$("#the-form").serialize(),
+            success:function(res){
+                
+                window.location.href = '/booking';
+                return false;
+            },
+            error:function(xhr, status, error){
+                
+                console.log(xhr.responseText);
+                var err = '';
+                $.each(JSON.parse(xhr.responseText) , function(i, item) {
+                   
+                     err +='<li>'+item.msg+'</li>';
+                });
+                $(".err-area").html(err);    
+                return false;
+            }
+            
+           });
+        }
+    
+    </script>
+</body>
+</html>

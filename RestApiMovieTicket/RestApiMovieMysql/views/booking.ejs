@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=title%></title>
+        <script type="text/javascript" src="/../js/jquery-1.10.2.min.js"></script>
+        <link rel="stylesheet" href="/../css/style.css">
+    </head>
+<body>
+<div class="data-table">
+    <table border="1" cellpadding="7" cellspacing="7">
+        <tr>
+            <th width="50px">No</th>
+            <th>bookingID</th>
+            <th>bookpersonname</th>
+            <th>bookingDate</th>            
+            <th>seatid</th>
+            <th>movieName</th>
+            <th>seatNumber</th>
+        </tr>
+                       
+        <% if(data.length){ 
+                        
+         for(var i = 0;i < data.length;i++) { %>
+         
+        <tr>
+            <td><%=(i+1)%></td>
+            <td><%=data[i].bookingID%></td>
+            <td><%=data[i].bookpersonname%></td>
+            <td><%=data[i].bookingDate%></td>
+            <td><%=data[i].seatid%></td>
+            <td><%=data[i].movieName%></td>
+            <td><%=data[i].seatNumber%></td>
+            <td>
+                <a class="a-inside edit" href="/booking/<%=data[i].bookingID%>">Edit</a>
+               
+                <a class="a-inside delete" href="javascript:void(0)" onClick="deleteUser(<%=data[i].bookingID%>)">Delete</a>
+               
+            </td>
+        </tr>
+    <% }
+    
+     }else{ %>
+         <tr>
+            <td colspan="5">No Data</td>
+         </tr>
+    <% } %>
+                                      
+    </table>
+    <div class="page-data">
+       
+        <form method="post" action="/" id="the-form">
+                      
+            <table cellpadding="11">
+            <tr>
+                <td class="label">bookingID</td><td>: <input type="text" name="bookingID" /></td>
+             </tr>
+            <tr>
+                <td class="label">bookpersonname</td><td>: <input type="text"  name="bookpersonname" /></td>
+             </tr>
+              <tr>
+                <td class="label">bookingDate</td><td>: <input type="text"  name="bookingDate"  /></td>
+             </tr>
+             <tr>
+                <td class="label">seatid</td><td>: <input type="text"  name="seatid"  /></td>
+             </tr>
+             <tr>
+                <td class="label">movieName</td><td>: <input type="text"  name="movieName"  /></td>
+             </tr>
+             <tr>
+                <td class="label">seatNumber</td><td>: <input type="text" name="seatNumber" /></td>
+             </tr>
+             <tr>
+                <td class="label"></td>
+                <td>
+                    &nbsp; <input type="button" value="Save" onClick="saveUser()">
+                </td>
+             </tr>
+            </table>
+        </form>
+    </div>
+    <div class="page-data">
+         <ul class="err-area"></ul>
+    </div>
+</div>
+
+
+<script>
+
+    function saveUser(){
+       
+       $.ajax({
+        
+        url:"/booking",
+        type:"post",
+        data:$("#the-form").serialize(),
+        success:function(res){
+            
+            window.location.reload();
+            return false;
+        },
+        error:function(xhr, status, error){
+            
+            console.log(xhr.responseText);
+            var err = '';
+            $.each(JSON.parse(xhr.responseText) , function(i, item) {
+               
+                 err +='<li>'+item.msg+'</li>';
+            });
+            $(".err-area").html(err);    
+            return false;
+        }
+        
+       });
+    }
+    
+    function deleteUser(user_id){
+    
+        $.ajax({
+            url:"/api/user/"+user_id,
+            type: 'DELETE',
+            success: function(res) {
+                
+                window.location.reload();
+                return false;
+            },
+            error:function(xhr, status, error){
+            
+                console.log(xhr.responseText);
+                alert("Error deleting");
+                return false;
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

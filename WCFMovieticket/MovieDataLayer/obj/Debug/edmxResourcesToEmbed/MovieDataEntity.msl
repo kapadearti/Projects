@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="mtb_dbModelStoreContainer" CdmEntityContainer="mtb_dbEntities">
+    <EntitySetMapping Name="bookings">
+      <EntityTypeMapping TypeName="mtb_dbModel.booking">
+        <MappingFragment StoreEntitySet="booking">
+          <ScalarProperty Name="bookingID" ColumnName="bookingID" />
+          <ScalarProperty Name="bookPersonname" ColumnName="bookPersonname" />
+          <ScalarProperty Name="bookingDate" ColumnName="bookingDate" />
+          <ScalarProperty Name="seatid" ColumnName="seatid" />
+          <ScalarProperty Name="movieid" ColumnName="movieid" />
+          <ScalarProperty Name="paymentStatusID" ColumnName="paymentStatusID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="movies">
+      <EntityTypeMapping TypeName="mtb_dbModel.movie">
+        <MappingFragment StoreEntitySet="movie">
+          <ScalarProperty Name="movieID" ColumnName="movieID" />
+          <ScalarProperty Name="movieName" ColumnName="movieName" />
+          <ScalarProperty Name="language" ColumnName="language" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="screenID" ColumnName="screenID" />
+          <ScalarProperty Name="timeslotID" ColumnName="timeslotID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="screens">
+      <EntityTypeMapping TypeName="mtb_dbModel.screen">
+        <MappingFragment StoreEntitySet="screen">
+          <ScalarProperty Name="screenID" ColumnName="screenID" />
+          <ScalarProperty Name="screenName" ColumnName="screenName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="seats">
+      <EntityTypeMapping TypeName="mtb_dbModel.seat">
+        <MappingFragment StoreEntitySet="seats">
+          <ScalarProperty Name="seatID" ColumnName="seatID" />
+          <ScalarProperty Name="seatNumber" ColumnName="seatNumber" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="screenID" ColumnName="screenID" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="timeslots">
+      <EntityTypeMapping TypeName="mtb_dbModel.timeslot">
+        <MappingFragment StoreEntitySet="timeslot">
+          <ScalarProperty Name="timeslotID" ColumnName="timeslotID" />
+          <ScalarProperty Name="timeslotDisc" ColumnName="timeslotDisc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

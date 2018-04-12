@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=title%></title>
+        <script type="text/javascript" src="/../js/jquery-1.10.2.min.js"></script>
+        <link rel="stylesheet" href="/../css/style.css">
+    </head>
+<body>
+<div class="data-table">
+    <table border="1" cellpadding="7" cellspacing="7">
+        <tr>
+            <th width="50px">No</th>
+            <th>movieName  </th>
+            <th>language</th>
+            <th>status</th>            
+            <th>date</th>
+            <th>screenName</th>
+            <th>timeslotDisc</th>
+        </tr>
+                       
+        <% if(data.length){ 
+                        
+         for(var i = 0;i < data.length;i++) { %>
+         
+        <tr>
+            <td><%=(i+1)%></td>
+            <td><%=data[i].movieName%></td>
+            <td><%=data[i].language%></td>
+            <td><%=data[i].status%></td>
+            <td><%=data[i].date%></td>
+            <td><%=data[i].screenName%></td>
+            <td><%=data[i].timeslotDisc%></td>
+            <td>
+                <a class="a-inside edit" href="/movie/<%=data[i].movieID%>">Edit</a>
+               
+                <a class="a-inside delete" href="javascript:void(0)" onClick="deleteUser(<%=data[i].movieID%>)">Delete</a>
+               
+            </td>
+        </tr>
+    <% }
+    
+     }else{ %>
+         <tr>
+            <td colspan="5">No Data</td>
+         </tr>
+    <% } %>
+                                      
+    </table>
+
+   
+</table>
+
+    
+</div>
+<div class="page-data">
+    
+    <form method="post" action="" id="the-form">
+        <table cellpadding="11">
+        <tr>
+            <td class="label">Movie name</td><td>: <input type="text" name="movieName"></td>
+         </tr>
+        <tr>
+            <td class="label">Language</td><td>: <input type="text" name="language"></td>
+         </tr>
+          <tr>
+            <td class="label">Status</td><td>: <input type="text" name="status"></td>
+         </tr>
+         <tr>
+            <td class="label">Date</td><td>: <input type="text" name="date"></td>
+         </tr>
+         <tr>
+            <td class="label"></td>
+            <td>
+                &nbsp; <input type="button" value="Save" onClick="saveMovie()">
+            </td>
+         </tr>
+        </table>
+    </form>
+</div>
+<div class="page-data">
+     <ul class="err-area"></ul>
+</div>
+
+<script>
+
+    function saveMovie{
+       
+       $.ajax({
+        
+        url:"/api/user",
+        type:"post",
+        data:$("#the-form").serialize(),
+        success:function(res){
+            
+            window.location.reload();
+            return false;
+        },
+        error:function(xhr, status, error){
+            
+            console.log(xhr.responseText);
+            var err = '';
+            $.each(JSON.parse(xhr.responseText) , function(i, item) {
+               
+                 err +='<li>'+item.msg+'</li>';
+            });
+            $(".err-area").html(err);    
+            return false;
+        }
+        
+       });
+    }
+    
+    function deleteUser(user_id){
+    
+        $.ajax({
+            url:"/api/user/"+user_id,
+            type: 'DELETE',
+            success: function(res) {
+                
+                window.location.reload();
+                return false;
+            },
+            error:function(xhr, status, error){
+            
+                console.log(xhr.responseText);
+                alert("Error deleting");
+                return false;
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

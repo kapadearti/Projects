@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mtb_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="booking">
+    <Key>
+      <PropertyRef Name="bookingID" />
+    </Key>
+    <Property Name="bookingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="bookPersonname" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="bookingDate" Type="DateTime" />
+    <Property Name="seatid" Type="Int32" />
+    <Property Name="movieid" Type="Int32" />
+    <Property Name="paymentStatusID" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="movie" Relationship="Self.movieid" FromRole="booking" ToRole="movie" />
+    <NavigationProperty Name="seat" Relationship="Self.seatnumber" FromRole="booking" ToRole="seats" />
+  </EntityType>
+  <EntityType Name="movie">
+    <Key>
+      <PropertyRef Name="movieID" />
+    </Key>
+    <Property Name="movieID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="movieName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="language" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
+    <Property Name="date" Type="DateTime" />
+    <Property Name="screenID" Type="Int32" />
+    <Property Name="timeslotID" Type="Int32" />
+    <NavigationProperty Name="bookings" Relationship="Self.movieid" FromRole="movie" ToRole="booking" />
+    <NavigationProperty Name="screen" Relationship="Self.screenID" FromRole="movie" ToRole="screen" />
+    <NavigationProperty Name="timeslot" Relationship="Self.timeslotid" FromRole="movie" ToRole="timeslot" />
+  </EntityType>
+  <EntityType Name="screen">
+    <Key>
+      <PropertyRef Name="screenID" />
+    </Key>
+    <Property Name="screenID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="screenName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="movies" Relationship="Self.screenID" FromRole="screen" ToRole="movie" />
+    <NavigationProperty Name="seats" Relationship="Self.screen1" FromRole="screen" ToRole="seats" />
+  </EntityType>
+  <EntityType Name="seat">
+    <Key>
+      <PropertyRef Name="seatID" />
+    </Key>
+    <Property Name="seatID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="seatNumber" Type="Int32" />
+    <Property Name="Row" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="screenID" Type="Int32" />
+    <Property Name="status" Type="String" MaxLength="65532" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Int32" />
+    <NavigationProperty Name="bookings" Relationship="Self.seatnumber" FromRole="seats" ToRole="booking" />
+    <NavigationProperty Name="screen" Relationship="Self.screen1" FromRole="seats" ToRole="screen" />
+  </EntityType>
+  <EntityType Name="timeslot">
+    <Key>
+      <PropertyRef Name="timeslotID" />
+    </Key>
+    <Property Name="timeslotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="timeslotDisc" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="movies" Relationship="Self.timeslotid" FromRole="timeslot" ToRole="movie" />
+  </EntityType>
+  <Association Name="movieid">
+    <End Role="movie" Type="Self.movie" Multiplicity="0..1" />
+    <End Role="booking" Type="Self.booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="movie">
+        <PropertyRef Name="movieID" />
+      </Principal>
+      <Dependent Role="booking">
+        <PropertyRef Name="movieid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="seatnumber">
+    <End Role="seats" Type="Self.seat" Multiplicity="0..1" />
+    <End Role="booking" Type="Self.booking" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="seats">
+        <PropertyRef Name="seatID" />
+      </Principal>
+      <Dependent Role="booking">
+        <PropertyRef Name="seatid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="screenID">
+    <End Role="screen" Type="Self.screen" Multiplicity="0..1" />
+    <End Role="movie" Type="Self.movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="screen">
+        <PropertyRef Name="screenID" />
+      </Principal>
+      <Dependent Role="movie">
+        <PropertyRef Name="screenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="timeslotid">
+    <End Role="timeslot" Type="Self.timeslot" Multiplicity="0..1" />
+    <End Role="movie" Type="Self.movie" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="timeslot">
+        <PropertyRef Name="timeslotID" />
+      </Principal>
+      <Dependent Role="movie">
+        <PropertyRef Name="timeslotID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="screen1">
+    <End Role="screen" Type="Self.screen" Multiplicity="0..1" />
+    <End Role="seats" Type="Self.seat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="screen">
+        <PropertyRef Name="screenID" />
+      </Principal>
+      <Dependent Role="seats">
+        <PropertyRef Name="screenID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="mtb_dbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="bookings" EntityType="Self.booking" />
+    <EntitySet Name="movies" EntityType="Self.movie" />
+    <EntitySet Name="screens" EntityType="Self.screen" />
+    <EntitySet Name="seats" EntityType="Self.seat" />
+    <EntitySet Name="timeslots" EntityType="Self.timeslot" />
+    <AssociationSet Name="movieid" Association="Self.movieid">
+      <End Role="movie" EntitySet="movies" />
+      <End Role="booking" EntitySet="bookings" />
+    </AssociationSet>
+    <AssociationSet Name="seatnumber" Association="Self.seatnumber">
+      <End Role="seats" EntitySet="seats" />
+      <End Role="booking" EntitySet="bookings" />
+    </AssociationSet>
+    <AssociationSet Name="screenID" Association="Self.screenID">
+      <End Role="screen" EntitySet="screens" />
+      <End Role="movie" EntitySet="movies" />
+    </AssociationSet>
+    <AssociationSet Name="timeslotid" Association="Self.timeslotid">
+      <End Role="timeslot" EntitySet="timeslots" />
+      <End Role="movie" EntitySet="movies" />
+    </AssociationSet>
+    <AssociationSet Name="screen1" Association="Self.screen1">
+      <End Role="screen" EntitySet="screens" />
+      <End Role="seats" EntitySet="seats" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

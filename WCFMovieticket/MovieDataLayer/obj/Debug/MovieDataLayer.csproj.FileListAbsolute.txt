@@ -1,0 +1,33 @@
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\MovieDataLayer.dll.config
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\MovieDataLayer.dll
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\MovieDataLayer.pdb
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\EntityFramework.dll
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\MySql.Data.dll
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\MySql.Data.Entity.dll
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\EntityFramework.xml
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\MySql.Data.xml
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\bin\Debug\MySql.Data.Entity.EF6.xml
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\obj\Debug\MovieDataLayer.csproj.CoreCompileInputs.cache
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\obj\Debug\MovieDataLayer.dll
+D:\SRH Cource\SAD\MovieService\Service\MovieService\MovieDataLayer\obj\Debug\MovieDataLayer.pdb
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MovieDataLayer.dll.config
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MovieDataLayer.dll
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MovieDataLayer.pdb
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\EntityFramework.dll
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MySql.Data.dll
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MySql.Data.Entity.dll
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MySql.Web.dll
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\EntityFramework.xml
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MySql.Data.xml
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MySql.Data.Entity.EF6.xml
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\bin\Debug\MySql.Web.xml
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\obj\Debug\MovieDataLayer.csproj.CoreCompileInputs.cache
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\obj\Debug\MovieDataLayer.csproj.CopyComplete
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\obj\Debug\MovieDataLayer.dll
+E:\GitHub\sad2018-Group-3-technical-demo-rest\WCFMovieticket\MovieDataLayer\obj\Debug\MovieDataLayer.pdb

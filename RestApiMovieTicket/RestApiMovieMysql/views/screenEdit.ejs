@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=title%></title>
+        <script type="text/javascript" src="/../js/jquery-1.10.2.min.js"></script>
+        <link rel="stylesheet" href="/../css/style.css">
+    </head>
+<body>
+    <div class="page-data">
+        <% var screenID = data[0].screenID; 
+        var screenName = data[0].screenName; 
+     %>
+        <form method="post" action="/" id="the-form">
+                      
+            <table cellpadding="11">
+            <tr>
+                <td class="label">screenID</td><td>: <input type="text" name="screenID"  value="<%=screenID %>"/></td>
+             </tr>
+            <tr>
+                <td class="label">screenName</td><td>: <input type="text"  name="screenName"  value="<%=screenName %>"/></td>
+             </tr>
+             <tr>
+                <td class="label"></td>
+                <td>
+                    &nbsp; <input type="button" value="Save" onClick="saveUser()">
+                </td>
+             </tr>
+            </table>
+        </form>
+    </div>
+    <div class="page-data">
+         <ul class="err-area"></ul>
+    </div>
+ <script>
+    
+        function saveUser(){
+            
+
+        alert($("#the-form").serialize());
+     
+           $.ajax({
+            
+            url:"/screen/<%=data[0].screenID%>",
+            type:"put",
+            data: $("#the-form").serialize(),//$("#the-form").serialize(),
+            success:function(res){
+                
+                window.location.href = '/screen';
+                return false;
+            },
+            error:function(xhr, status, error){
+                
+                console.log(xhr.responseText);
+                var err = '';
+                $.each(JSON.parse(xhr.responseText) , function(i, item) {
+                   
+                     err +='<li>'+item.msg+'</li>';
+                });
+                $(".err-area").html(err);    
+                return false;
+            }
+            
+           });
+        }
+    
+    </script>
+</body>
+</html>
